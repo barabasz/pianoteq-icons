@@ -44,10 +44,9 @@ Every icon is generated from SVG code in `src/` and rendered with headless Chrom
 | `src/svg.js` | Key and layer composition, badges |
 | `src/sets.js` | Lists of instrument, function and layer keys |
 | `src/build.js` | PNG export and preview canvases |
+| `src/fonts/` | Inter (SemiBold to Black), SIL Open Font License |
 
-Requirements:
-- Node.js 18 or later.
-- The [Inter](https://rsms.me/inter/) font installed, which badges and letters use.
+Requirements: Node.js 18 or later. The [Inter](https://rsms.me/inter/) font used for badges and letters is bundled in `src/fonts` and embedded at build time, so nothing needs to be installed system-wide.
 
 ```sh
 npm install
@@ -60,7 +59,7 @@ To add an icon, add an entry to `src/sets.js` (and a glyph to `src/glyphs.js` if
 
 ## License
 
-The icons are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and the source code under the MIT License. See [LICENSE](LICENSE).
+The icons are released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) and the source code under the MIT License. See [LICENSE](LICENSE). The bundled Inter font is © The Inter Project Authors and licensed under the [SIL Open Font License 1.1](src/fonts/OFL.txt).
 
 ## Disclaimer
 

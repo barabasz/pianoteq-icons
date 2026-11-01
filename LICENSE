@@ -1,4 +1,5 @@
-This repository uses two licenses.
+This repository uses two licenses (plus the bundled Inter font in src/fonts,
+which keeps its own SIL Open Font License 1.1, see src/fonts/OFL.txt).
 
 1. Icons (everything in icons/ and previews/) are licensed under the
    Creative Commons Attribution 4.0 International License (CC BY 4.0).
