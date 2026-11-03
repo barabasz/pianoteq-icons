@@ -4,13 +4,19 @@
 const I = (id, theme, glyph, badge, title) => ({ id, theme, glyph, badge, title });
 
 const INSTRUMENTS = [
+  // Grand pianos: badge = model (generic has none).
   [I('grand-piano', 'piano', 'grand', null, 'Grand piano'),
-    I('steinway-d-ny', 'piano', 'grand', 'NY', 'Steinway NY'), I('steinway-d-hh', 'piano', 'grand', 'HH', 'Steinway HH'),
+    I('grand-steinway-d', 'piano', 'grand', 'SD', 'Steinway D'), I('grand-shigeru-kawai', 'piano', 'grand', 'KA', 'Shigeru Kawai'),
+    I('grand-bosendorfer', 'piano', 'grand', 'BÖ', 'Bösendorfer'), I('grand-steinway-b', 'piano', 'grand', 'SB', 'Steinway B'),
+    I('grand-petrof', 'piano', 'grand', 'PE', 'Petrof'), I('grand-bechstein', 'piano', 'grand', 'CB', 'Bechstein DG'),
+    I('grand-steingraeber', 'piano', 'grand', 'SG', 'Steingraeber'), I('grand-grotrian', 'piano', 'grand', 'GR', 'Grotrian'),
+    I('grand-bluthner', 'piano', 'grand', 'BL', 'Blüthner')],
+  [I('grand-k2', 'piano', 'grand', 'K2', 'K2'), I('grand-yc5', 'piano', 'grand', 'YC', 'YC5'),
     I('upright', 'piano', 'upright', null, 'Upright'), I('upright-u4', 'piano', 'upright', 'U4', 'Upright U4'),
     I('cp80', 'piano', 'cp80', 'CP', 'CP-80'),
     I('tines', 'electric', 'tines', null, 'Tines'),
     I('tines-mk1', 'electric', 'tines', 'MK1', 'Tines MK1'), I('tines-mk2', 'electric', 'tines', 'MK2', 'Tines MK2'),
-    I('reeds', 'electric', 'reeds', null, 'Reeds')],
+    I('reeds', 'electric', 'reeds', null, 'Reeds'), null],
   [I('pianet-n', 'hohner', 'planet:N', null, 'Pianet N'), I('pianet-t', 'hohner', 'planet:T', null, 'Pianet T'),
     I('electra-piano', 'hohner', 'electra', null, 'Electra'), I('clavinet-d6', 'hohner', 'clavinet', 'D6', 'Clavinet'),
     I('syngular-keys', 'synth', 'synth', null, 'Keys'), I('syngular-pad', 'synth', 'pad', null, 'Pad'),
