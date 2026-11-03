@@ -23,7 +23,7 @@ The icons have no embedded text. The bottom of each key is left free for the tit
 
 ## Using the icons
 
-PNG files (96 × 96 px, the native Stream Deck XL key size) are in `icons/`:
+The easiest way to get them is the ZIP attached to the latest [release](https://github.com/barabasz/pianoteq-icons/releases/latest). PNG files (96 × 96 px, the native Stream Deck XL key size) are in `icons/`:
 
 | Folder | Contents | File names |
 | --- | --- | --- |
@@ -55,7 +55,11 @@ npm run build                          # icons + previews
 node src/build.js icons --size=144 --out=build-144   # another size, in a separate folder
 ```
 
-To add an icon, add an entry to `src/sets.js` (and a glyph to `src/glyphs.js` if needed), then rebuild.
+To add an icon, add an entry to `src/sets.js` (and a glyph to `src/glyphs.js` if needed), then rebuild and commit the PNG files.
+
+## Releasing
+
+Publish a release on GitHub with a new tag (e.g. `v1.1.0`). The **Release ZIP** workflow (`.github/workflows/release-zip.yml`) then packs the committed `icons/` folder and `LICENSE` into `pianoteq-icons-<tag>.zip` and attaches it to the release. To rebuild the ZIP for an existing release, run the workflow manually from the Actions tab with that tag.
 
 ## License
 
